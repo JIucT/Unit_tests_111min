@@ -1,11 +1,4 @@
-  class ListNode
-    attr_accessor :value, :nextobj 
-    def initialize(c)
-      @value = c
-      @nextobj = nil
-    end
-  end  
-
+require './listnode.rb'
 
   class List
     def initialize(node)
@@ -63,13 +56,13 @@
   end
   
   
-#c = ListNode.new("trololo")
-#a = List.new(c)
-#a.add(ListNode.new("1"))
-#a.add(ListNode.new("2"))
+c = ListNode.new("trololo")
+a = List.new(c)
+a.add(ListNode.new("1"))
+a.add(ListNode.new("2"))
 #a.add(ListNode.new("3"))
-#a.showlist
-#a.shownext
+a.showlist
+a.shownext
 #a.shownext
 #a.shownext
 #a.showfirst

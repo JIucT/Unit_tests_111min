@@ -43,3 +43,23 @@
 	  end
 	end  
   end
+
+
+  describe ListNode do
+	describe "#initialize" do
+	  it "should make exception if was given no parameters" do
+	    lambda {ListNode.new()}.should raise_exception ArgumentError
+	  end
+	  it "should return a new ListNode object" do
+	    ListNode.new("qwerty").should  be_an_instance_of ListNode
+	  end  
+	  it "should make @value = parameter" do
+	    @a = ListNode.new("qwerty")
+	    @a.value.should eq "qwerty"
+	  end
+	  it "should make @nextobj = nil" do
+	    @a = ListNode.new("qwerty")
+	    @a.nextobj.should eq nil
+	  end  
+	end
+  end
